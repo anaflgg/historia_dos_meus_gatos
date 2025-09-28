@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #480048, #C04848);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 60px;
+}
+
+.gatos-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gato-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.gato-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    filter: grayscale(100%);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.info-gato {
+    width: 200px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+    visibility: hidden;
+}
+
+.info-gato h2 {
+    font-size: 3rem;
+    color: #FFA500;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.btn-saber-mais {
+    background-color: #FFA500;
+    color: #480048;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-saber-mais:hover {
+    background-color: #FFD700;
+}
+
+.gato-wrapper.ativo .gato-img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    box-shadow: 0 0 45px #FFA500;
+}
+
+.gato-wrapper.ativo .info-gato {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.instrucao {
+    margin-top: 60px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
