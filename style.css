@@ -5,12 +5,19 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+.text-center h1 {
     font-family: 'Irish Grover', sans-serif !important;
     font-size: 4rem;
     color: #ffd700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     margin-bottom: 60px;
+}
+
+.text-center p {
+    font-family: 'Irish Grover', sans-serif !important;
+    font-size: 2.2rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .gato-wrapper {
@@ -39,6 +46,11 @@ h1 {
     transform: scale(0.8);
     transition: all 0.4s ease-in-out;
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    gap: 15px;  
 }
 
 .info-gato h2 {
@@ -51,20 +63,36 @@ h1 {
 }
 
 .btn-saber-mais {
-    background-color: #FFA500;
-    color: #480048;
+    background: url('assets/images/paw_button.png') no-repeat center center / contain;
     border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s;
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #300018;
+    text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+a {
+    text-decoration: none;
 }
 
 .btn-saber-mais:hover {
-    background-color: #ffd700;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.5)) brightness(1.1);
+}
+
+.btn-saber-mais:active {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.4)) brightness(0.95);
 }
 
 .gato-wrapper.ativo .gato-img {
@@ -83,4 +111,4 @@ h1 {
     margin-top: 60px;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.7);
-}
+} 
