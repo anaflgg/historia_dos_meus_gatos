@@ -1,50 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: sans-serif;
     background: linear-gradient(135deg, #480048, #C04848);
     color: white;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.container {
-    text-align: center;
+    overflow-x: hidden;
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 5rem;
-    color: #FFD700;
+    font-family: 'Irish Grover', sans-serif !important;
+    font-size: 4rem;
+    color: #ffd700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     margin-bottom: 60px;
-}
-
-.gatos-container {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
 }
 
 .gato-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 25px;
+    min-height: 400px;
 }
 
 .gato-img {
     width: 350px;
     height: 350px;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #fff;
@@ -62,6 +42,8 @@ h1 {
 }
 
 .info-gato h2 {
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: bold;
     font-size: 3rem;
     color: #FFA500;
     margin: 0;
@@ -82,7 +64,7 @@ h1 {
 }
 
 .btn-saber-mais:hover {
-    background-color: #FFD700;
+    background-color: #ffd700;
 }
 
 .gato-wrapper.ativo .gato-img {
@@ -102,5 +84,3 @@ h1 {
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.7);
 }
-
-

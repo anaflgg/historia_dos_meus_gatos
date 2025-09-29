@@ -1,45 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para meus amores felinos</title>
 
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <main class="container">
-        <h1>Historia dos meus Gatinhos</h1>
 
-        <div class="gatos-container">
+    <main class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
 
-            <div class="gato-wrapper" id="wrapper-thor">
-                <div class="info-gato info-thor">
-                    <h2>Thor</h2>
-                    <button class="btn-saber-mais">🐾 Saber mais</button>
+        <div class="text-center">
+            <h1>Historia dos meus Gatinhos</h1>
+
+            <div class="row justify-content-center align-items-center g-5">
+
+                <div class="col-lg-6">
+                    <div class="gato-wrapper" id="wrapper-thor">
+                        <div class="info-gato info-thor">
+                            <h2>Thor</h2>
+                            <button class="btn-saber-mais"><i class="fa-solid fa-paw"></i> Saber mais</button>
+                        </div>
+                        <img src="assets/images/thordechapeu.png" alt="Gatinho Thor" class="gato-img img-fluid"
+                            id="gato-thor">
+                    </div>
                 </div>
-                <img src="assets/images/thordechapeu.png" alt="Gatinho Thor" class="gato-img" id="gato-thor">
+
+                <div class="col-lg-6">
+                    <div class="gato-wrapper" id="wrapper-luna">
+                        <img src="assets/images/lunadormindo.png" alt="Gatinha Luna" class="gato-img img-fluid"
+                            id="gato-luna">
+                        <div class="info-gato info-luna">
+                            <h2>Luna</h2>
+                            <button class="btn-saber-mais">Saber mais <i class="fa-solid fa-paw"></i></button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="gato-wrapper" id="wrapper-luna">
-                <img src="assets/images/lunadormindo.png" alt="Gatinha Luna" class="gato-img" id="gato-luna">
-                <div class="info-gato info-luna">
-                    <h2>Luna</h2>
-                    <button class="btn-saber-mais">🐾 Saber mais</button>
-                </div>
-            </div>
-
+            <p class="instrucao">Clique em um gatinho para ver seu brilho!</p>
         </div>
-
-        <p class="instrucao">Clique em um gatinho para ver seu brilho!</p>
     </main>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
