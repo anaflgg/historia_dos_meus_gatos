@@ -112,3 +112,55 @@ a {
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.7);
 } 
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#historia-luna {
+    background-color: #f8f9fa;
+}
+
+.historia-img {
+    width: 350px;  
+    height: 350px; 
+    object-fit: cover; 
+}
+
+@media (max-width: 992px) {
+    .w-75 {
+        width: 60% !important; 
+    }
+}
+
+@media (max-width: 767px) {
+    .text-center h1 {
+        font-size: 2.5rem;
+    }
+
+    .gato-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        min-height: auto;
+    }
+    .info-thor { order: 1; }
+    #gato-thor { order: 2; }
+
+    .info-luna { order: 1; }
+    #gato-luna { order: 2; }
+
+    .gato-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    section .col-md-6 {
+        margin-bottom: 2rem;
+    }
+    
+    .display-4 {
+        font-size: 2.2rem;
+    }
+}

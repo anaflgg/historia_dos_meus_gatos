@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
         wrapperThor.classList.remove('ativo');
     });
 
-})
+    AOS.init({
+        duration: 800,
+    });
 
-AOS.init();
+})
