@@ -123,6 +123,10 @@ section {
     background-color: #f8f9fa;
 }
 
+#historia-luna.bg-light {
+  background: transparent !important;
+}
+
 .historia-img {
     width: 350px;  
     height: 350px; 
