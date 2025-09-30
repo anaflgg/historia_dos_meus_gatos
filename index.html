@@ -50,35 +50,56 @@
         </div>
     </main>
 
-    <section id="historia-thor" class="container-fluid py-5">
-        <div class="container bg-white text-dark p-5 rounded-5 shadow-lg">
-            <div class="row align-items-center">
-                
-                <div class="col-md-6">
-                    <h2 class="display-4 fw-bold mb-4" data-aos="fade-right" data-aos-mirror="true">A História do Thor</h2>
-                    <p class="lead" data-aos="fade-right" data-aos-delay="200" data-aos-mirror="true">
-                        Thor apareceu na minha vida em 2018, ainda filhotinho, vindo das ruas depois de passar por maus-tratos. No começo, ele ficou com meu irmão mais velho, mas desde o primeiro instante eu já tinha uma afinidade enorme com ele.
-                        <br>
-                        <br>
-                        Quando me mudei para um apartamento com a minha família, nossa ligação só cresceu, e durante a pandemia, em 2020, passávamos praticamente o dia inteiro juntos. Thor se tornou meu melhor amigo, minha companhia em todos os momentos.
-                        <br>
-                        <br>
-                        Houve um tempo em que meu irmão pensou em levá-lo quando fosse se mudar, mas eu não conseguia imaginar minha vida sem ele. Pedi para que ficasse comigo, e felizmente ele aceitou. Hoje, Thor é meu filho de coração, meu companheiro de todos os dias e parte essencial da minha vida.
-                    </p>
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-mirror="true">
-                        <button class="btn-saber-mais mt-4" data-bs-toggle="modal" data-bs-target="#modalThor">
-                            <span>Mais Fotos</span>
-                        </button>
+    <section id="historia-thor" class="container-fluid py-5 d-flex align-items-center">
+    <div class="flip-card-container container">
+        
+        <div class="flip-card-inner" id="thor-card-inner">
+
+            <div class="flip-card-front">
+                <div class="card-content-wrapper bg-white text-dark p-5 rounded-5 shadow-lg">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h2 class="display-4 fw-bold mb-4" data-aos="fade-right">A História do Thor</h2>
+                            <p class="lead" data-aos="fade-right" data-aos-delay="200">
+                                Thor apareceu na minha vida em 2018, ainda filhotinho, vindo das ruas depois de passar por maus-tratos. No começo, ele ficou com meu irmão mais velho, mas desde o primeiro instante eu já tinha uma afinidade enorme com ele.
+                                <br><br>
+                                Quando me mudei para um apartamento com a minha família, nossa ligação só cresceu, e durante a pandemia, em 2020, passávamos praticamente o dia inteiro juntos. Thor se tornou meu melhor amigo, minha companhia em todos os momentos.
+                                <br><br>
+                                Houve um tempo em que meu irmão pensou em levá-lo quando fosse se mudar, mas eu não conseguia imaginar minha vida sem ele. Pedi para que ficasse comigo, e felizmente ele aceitou. Hoje, Thor é meu filho de coração, meu companheiro de todos os dias e parte essencial da minha vida.
+                            </p>
+                            <div class="d-flex flex-wrap align-items-center gap-3" data-aos="fade-up" data-aos-delay="500">
+                                <button class="btn-saber-mais mt-4" data-bs-toggle="modal" data-bs-target="#modalThor">
+                                    <span>Mais Fotos</span>
+                                </button>
+                                <button class="btn-saber-mais mt-4" id="btn-virar-thor">
+                                    <span>Personalidade</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="500">
+                            <img src="assets/images/thorzinho_historia.jpg" class="img-fluid rounded-circle shadow historia-img" alt="Foto do Thor">
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="500" data-aos-mirror="true">
-                    <img src="assets/images/thorzinho_historia.jpg" class="img-fluid rounded-circle shadow historia-img" alt="Foto do Thor">
-                </div>
-
             </div>
+
+            <div class="flip-card-back">
+                <div class="card-content-wrapper bg-white text-dark p-5 rounded-5 shadow-lg d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2 class="display-5 fw-bold mb-4">Personalidade do Thor 😼</h2>
+                    <ul class="lista-personalidade lead">
+                        <li>Gatinho introvertido</li>
+                        <li>Brincalhão (adora uma bolinha)</li>
+                        <li>Preguiçoso profissional</li>
+                        <li>Adora dormir no sofá e na cama</li>
+                        <li>Um pouco medroso com visitas</li>
+                    </ul>
+                    <p class="mt-4 fst-italic texto-voltar">(Clique aqui para voltar)</p>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="historia-luna" class="container-fluid py-5 bg-light">
         <div class="container bg-white text-dark p-5 rounded-5 shadow-lg">
