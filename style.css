@@ -14,7 +14,7 @@ body {
 }
 
 .text-center p {
-    font-family: 'Irish Grover', sans-serif !important;
+    font-family: 'Irish Grover', sans-serif;
     font-size: 2.2rem;
     color: #ffd700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -227,13 +227,14 @@ section {
     font-weight: bold;
 }
 
-section h2 {
+.titulo-historia {
     font-family: 'Irish Grover', sans-serif;
     color: #300018;
 }
 
-section p {
-    font-family: 'Sour Gummy', sans-serif;
+.texto-historia {
+    font-family: 'Sour Gummy', sans-serif !important;
+    color: #495057;
 }
 
 section ul li {
@@ -243,4 +244,88 @@ section ul li {
 .texto-voltar {
   color: #FFA500 !important;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); 
+}
+
+#significado-nomes .significado-texto,
+#significado-nomes .porque-texto {
+    color: #f0f0f0;
+    font-family: 'Sour Gummy', sans-serif !important;
+    font-size: 1.8rem;
+}
+
+.titulo-especial {
+    font-family: 'Irish Grover', sans-serif !important;
+    font-size: 5rem;
+    color: #ffd700;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.significado-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.significado-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2) !important;
+    cursor: pointer;
+}
+
+.nome-gato-significado {
+    font-family: 'Irish Grover', sans-serif;
+    font-size: 4rem;
+    color: #FFA500;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+}
+
+.significado-texto, .porque-texto {
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 1.3rem;
+    color: #f0f0f0;
+    text-align: left;
+}
+
+.significado-texto strong, .porque-texto strong {
+    color: #ffd700;
+}
+
+@media (max-width: 767px) {
+    .titulo-especial {
+        font-size: 3rem;
+    }
+
+    .nome-gato-significado {
+        font-size: 2.8rem;
+    }
+}
+
+#modalVideoIrmaos video:focus {
+    outline: none;
+}
+
+#irmaos-gatinhos .texto-historia {
+    font-family: 'Sour Gummy', sans-serif !important;
+    color: #495057;
+    font-size: 1.6rem;
+}
+
+.footer-branco {
+    position: relative; 
+}
+
+.footer-supervisao {
+    font-family: 'Irish Grover', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    color: #480048;
+    line-height: 1.3;
+}
+
+.footer-desenvolvido {
+    font-size: 1rem;
+    color: #FFA500 !important;
+    font-weight: 500;
+    font-family: 'Sour Gummy', sans-serif !important;
 }

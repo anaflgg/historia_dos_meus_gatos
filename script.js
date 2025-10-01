@@ -16,56 +16,70 @@ document.addEventListener('DOMContentLoaded', () => {
         wrapperThor.classList.remove('ativo');
     });
 
-    AOS.init({
-        duration: 800,
-    });
-
+    
     const thorCardInner = document.getElementById('thor-card-inner');
     const btnVirarThor = document.getElementById('btn-virar-thor');
     const thorCardBack = document.querySelector('#historia-thor .flip-card-back');
-
+    
     btnVirarThor.addEventListener('click', () => {
         thorCardInner.classList.toggle('is-flipped');
     });
-
+    
     thorCardBack.addEventListener('click', () => {
         thorCardInner.classList.remove('is-flipped');
     });
-
+    
     const lunaCardInner = document.getElementById('luna-card-inner');
     const btnVirarLuna = document.getElementById('btn-virar-luna');
     const lunaCardBack = lunaCardInner.querySelector('.flip-card-back');
-
+    
     btnVirarLuna.addEventListener('click', () => {
         lunaCardInner.classList.toggle('is-flipped');
     });
-
+    
     lunaCardBack.addEventListener('click', () => {
         lunaCardInner.classList.toggle('is-flipped');
     });
-
+    
 })
 
 document.addEventListener('DOMContentLoaded', () => {
     const thorWrapper = document.getElementById('wrapper-thor');
     const lunaWrapper = document.getElementById('wrapper-luna');
-
-    // Função para remover a classe 'ativo' de todos os wrappers
+    
     function desativarTodos() {
         thorWrapper.classList.remove('ativo');
         lunaWrapper.classList.remove('ativo');
     }
-
+    
     thorWrapper.addEventListener('click', (e) => {
-        // Evita que o clique no botão "Conhecer" ative o card
         if (e.target.closest('a')) return;
         desativarTodos();
         thorWrapper.classList.add('ativo');
     });
-
+    
     lunaWrapper.addEventListener('click', (e) => {
         if (e.target.closest('a')) return;
         desativarTodos();
         lunaWrapper.classList.add('ativo');
     });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const modalVideoIrmaos = document.getElementById('modalVideoIrmaos');
+    const videoPlayerIrmaos = document.getElementById('videoPlayerIrmaos');
+    
+    modalVideoIrmaos.addEventListener('shown.bs.modal', () => {
+        videoPlayerIrmaos.play();
+    });
+    
+    modalVideoIrmaos.addEventListener('hidden.bs.modal', () => {
+        videoPlayerIrmaos.pause();
+    });
+    
+});
+
+AOS.init({
+    duration: 800,
 });
