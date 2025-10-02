@@ -133,41 +133,7 @@ section {
     object-fit: cover; 
 }
 
-@media (max-width: 992px) {
-    .w-75 {
-        width: 60% !important; 
-    }
-}
 
-@media (max-width: 767px) {
-    .text-center h1 {
-        font-size: 2.5rem;
-    }
-
-    .gato-wrapper {
-        flex-direction: column;
-        gap: 10px;
-        min-height: auto;
-    }
-    .info-thor { order: 1; }
-    #gato-thor { order: 2; }
-
-    .info-luna { order: 1; }
-    #gato-luna { order: 2; }
-
-    .gato-img {
-        width: 250px;
-        height: 250px;
-    }
-
-    section .col-md-6 {
-        margin-bottom: 2rem;
-    }
-    
-    .display-4 {
-        font-size: 2.2rem;
-    }
-}
 
 .flip-card-container {
     perspective: 1500px;
@@ -232,7 +198,7 @@ section {
     color: #300018;
 }
 
-.texto-historia {
+section .texto-historia {
     font-family: 'Sour Gummy', sans-serif !important;
     color: #495057;
 }
@@ -292,16 +258,6 @@ section ul li {
     color: #ffd700;
 }
 
-@media (max-width: 767px) {
-    .titulo-especial {
-        font-size: 3rem;
-    }
-
-    .nome-gato-significado {
-        font-size: 2.8rem;
-    }
-}
-
 #modalVideoIrmaos video:focus {
     outline: none;
 }
@@ -358,12 +314,8 @@ section ul li {
     .gato-img {
         width: 100%;
         height: 100%;
-        border-radius: 50%;
-        border: 5px solid #fff;
-        object-fit: cover;
-        filter: grayscale(100%);
-        transition: all 0.4s ease;
     }
+    
     .info-gato {
         position: absolute;
         top: 0; left: 0;
@@ -395,7 +347,7 @@ section ul li {
     }
     
     .btn-saber-mais span {
-        font-size: 0.7em !important;
+        font-size: 0.9em !important;
     }
 
     #historia-thor .card-content-wrapper,
@@ -495,5 +447,45 @@ section ul li {
 
     .footer-desenvolvido {
     font-size: 2rem !important;
+    }
+
+    .w-75 {
+        width: 60% !important; 
+    }
+
+    .text-center h1 {
+        font-size: 2.5rem;
+    }
+
+    .gato-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        min-height: auto;
+    }
+    .info-thor { order: 1; }
+    #gato-thor { order: 2; }
+
+    .info-luna { order: 1; }
+    #gato-luna { order: 2; }
+
+    .gato-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    section .col-md-6 {
+        margin-bottom: 2rem;
+    }
+    
+    .display-4 {
+        font-size: 2.2rem;
+    }
+
+    .titulo-especial {
+        font-size: 3rem;
+    }
+
+    .nome-gato-significado {
+        font-size: 2.8rem;
     }
 }
