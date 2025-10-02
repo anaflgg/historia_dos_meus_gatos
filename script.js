@@ -80,6 +80,32 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
-AOS.init({
-    duration: 800,
+document.addEventListener('DOMContentLoaded', function () {
+
+    AOS.init({
+        disable: 'mobile',
+        duration: 800,
+        once: true
+    });
+
+    if (window.innerWidth < 768) {
+        const gatosWrapper = document.querySelectorAll('.gato-wrapper');
+        gatosWrapper.forEach(wrapper => {
+            wrapper.addEventListener('click', function (event) {
+                event.preventDefault();
+                const isAlreadyActive = this.classList.contains('mobile-active');
+                gatosWrapper.forEach(g => g.classList.remove('mobile-active'));
+                if (!isAlreadyActive) {
+                    this.classList.add('mobile-active');
+                }
+            });
+        });
+
+        const cardsSignificado = document.querySelectorAll('.significado-card');
+        cardsSignificado.forEach(card => {
+            card.addEventListener('click', function () {
+                this.classList.toggle('aberto');
+            });
+        });
+    }
 });
